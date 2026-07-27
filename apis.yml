@@ -1,8 +1,16 @@
 aid: insify
 name: Insify
-description: 'Insify is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: insurance-tech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Insify is a Dutch insurtech offering fully digital business insurance for freelancers,
+  self-employed professionals (ZZP''ers) and small-to-medium enterprises in the Netherlands. Its
+  online-first product line covers disability/income protection (arbeidsongeschiktheid, AOV),
+  professional liability (beroepsaansprakelijkheid, BAV), business liability (bedrijfsaansprakelijkheid,
+  AVB), business inventory and goods, electronics, in-vehicle equipment and auto cover, sold and
+  managed entirely online with no setup, advisory or cancellation fees and daily cancellation.
+  Serving more than 40,000 entrepreneurs across professions from IT and photography to care and
+  construction, Insify pairs instant quoting and fast claims with AI-assisted guidance (SmartGuide).
+  Backed by Accel, the company is tracked in the API Evangelist network as an insurance-tech
+  provider profile; it is a consumer-facing insurer and does not currently publish a public
+  developer API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/insify/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +18,32 @@ x-backed-by:
 - accel
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://www.insify.nl/og-image.jpg
 tags:
 - Company
 - Insurance Tech
+- Insurance
+- Business Insurance
+- Freelancers
+- Self-Employed
+- SME
+- Netherlands
+- Liability Insurance
+- Disability Insurance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +51,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/insify-domain-security.yml
 - type: Website
   url: https://insify.com/
+- type: Blog
+  url: https://www.insify.nl/blog
+- type: Support
+  url: https://www.insify.nl/contact/
+- type: SignUp
+  url: https://shop.insify.nl/
+- type: Login
+  url: https://my.insify.nl/login
+- type: Pricing
+  url: https://aov.insify.nl/
+- type: TermsOfService
+  url: https://www.insify.nl/voorwaarden/algemene-voorwaarden/
+- type: PrivacyPolicy
+  url: https://www.insify.nl/voorwaarden/privacybeleid
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
